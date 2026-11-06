@@ -1,0 +1,20 @@
+theme = TokyoNight Night 
+window-decoration = false
+font-family = CaskaydiaCove Nerd Font
+font-size = 15
+font-thicken = true
+window-decoration = false
+window-padding-x = 10
+window-padding-y = 10
+adjust-cell-height = +10%
+adjust-cell-width= +10%
+cursor-style = block
+cursor-style-blink = false
+
+confirm-close-surface = false
+mouse-hide-while-typing = true
+copy-on-select = false
+
+scrollback-limit = 10000
+
+shell-integration = detect

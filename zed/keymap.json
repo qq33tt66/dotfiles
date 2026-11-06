@@ -1,0 +1,89 @@
+[
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "space g g": "git_panel::ToggleFocus",
+      "space f r": "projects::OpenRecent",
+      "-": "project_panel::Toggle",
+      "tab": "file_finder::Toggle",
+    },
+  },
+  {
+    "bindings": {
+      "alt-.": "workspace::ToggleRightDock",
+      "alt-,": "terminal_panel::Toggle",
+      "alt-h": "workspace::ActivatePaneLeft",
+      "alt-l": "workspace::ActivatePaneRight",
+      "alt-k": "workspace::ActivatePaneUp",
+      "alt-j": "workspace::ActivatePaneDown",
+      "alt-shift-j": ["zed::IncreaseBufferFontSize", { "persist": false }],
+      "alt-shift-k": ["zed::DecreaseBufferFontSize", { "persist": false }],
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      "space w": ["workspace::SendKeystrokes", "ctrl-shift-i ctrl-s"],
+      "space d": "workspace::SaveWithoutFormat",
+      "space q": "pane::CloseActiveItem",
+      "space c a": "editor::ToggleCodeActions",
+      "space r n": "editor::Rename",
+      "g s": "outline::Toggle",
+      "space f g": "pane::DeploySearch",
+      "g d": "editor::GoToDefinition",
+      "g r": "editor::FindAllReferences",
+      "g i": "editor::GoToImplementation",
+      "[ d": "editor::GoToPreviousDiagnostic",
+      "] d": "editor::GoToDiagnostic",
+      "space s": "pane::SplitRight",
+      "space v": "pane::SplitDown",
+      "shift-k": "editor::Hover",
+      "space f m": "editor::Format",
+    },
+  },
+  {
+    "context": "(vim_mode == normal || vim_mode == visual) && !menu",
+    "bindings": {
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePreviousItem",
+      "space t": "pane::CloseOtherItems",
+    },
+  },
+  {
+    "context": "Filefinder && not_editing",
+    "bindings": {
+      "tab": "file_finder::Toggle",
+    },
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "r": "project_panel::Rename",
+      "c": "project_panel::Copy",
+      "p": "project_panel::Paste",
+      "x": "project_panel::Cut",
+      "d": ["project_panel::Trash", { "skip_prompt": true }],
+      "a": "project_panel::NewFile",
+      "shift-a": "project_panel::NewDirectory",
+      "-": "project_panel::Toggle",
+      "h": "project_panel::CollapseSelectedEntry",
+      "l": "project_panel::Open",
+      "s": "project_panel::OpenSplitHorizontal",
+      "v": "project_panel::OpenSplitVertical",
+      "u": "project_panel::Undo",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-shift-n": "workspace::NewTerminal",
+      "ctrl-shift-q": "pane::CloseActiveItem",
+    },
+  },
+]
