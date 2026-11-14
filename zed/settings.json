@@ -121,8 +121,8 @@
   "buffer_font_size": 20,
   "theme": {
     "mode": "dark",
-    "light": "Catppuccin Latte",
-    "dark": "Rosé Pine",
+    "light": "Rosé Pine Dawn",
+    "dark": "Tokyo Night Storm",
   },
 
   "cursor_shape": "block",
