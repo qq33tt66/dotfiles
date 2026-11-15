@@ -1,6 +1,6 @@
 theme = TokyoNight Storm
 window-decoration = false
-font-family = FiraCode Nerd Font
+font-family = CaskaydiaCove NFP
 font-size = 13
 font-thicken = true
 window-decoration = false
@@ -14,6 +14,8 @@ cursor-style-blink = false
 confirm-close-surface = false
 mouse-hide-while-typing = true
 copy-on-select = false
+keybind=alt+shift+j=increase_font_size:1.5
+keybind=alt+shift+k=decrease_font_size:1.5
 
 scrollback-limit = 10000
 
