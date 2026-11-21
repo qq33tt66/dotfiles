@@ -15,4 +15,7 @@ map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save file" })
 
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
-vim.keymap.set("n", "<Tab>", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+-- vim.keymap.set("n", "<Tab>", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "<Tab>", function()
+  Snacks.picker.files()
+end, { desc = "Find Files" })
